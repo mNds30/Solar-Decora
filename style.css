@@ -97,17 +97,17 @@ h1:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 18px;
-    margin-top: 20px;
+    gap: 0px;
+    margin-top: 4px;
     margin-bottom: 32px;
-    padding: 12px 20px;
+    padding: 2px 20px;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 
-.site-nav a {
+.site-nav a{
     color: #ffe082;
     text-transform: uppercase;
     letter-spacing: 0.12em;
@@ -150,7 +150,7 @@ h1:active {
     filter: saturate(1.05) brightness(1.05);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 300px) {
     .box-gallery {
         gap: 12px;
         margin-top: 40px;
@@ -159,4 +159,27 @@ h1:active {
     .box-gallery img {
         width: 90vw;
     }
+}
+.site-nav img{
+    width: 24px;
+    height: 24px;
+}
+
+.fazenda {
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-size: 1rem;
+    color: #ffe082;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 8px rgba(255, 221, 51, 0.35);
+    transition: color 0.25s ease, text-shadow 0.25s ease, transform 0.25s ease;
+    cursor: default;
+}
+.fazenda:hover,
+.fazenda:active {
+    color: #fff59d;
+    text-shadow: 0 6px 25px rgba(255, 235, 59, 0.8), 0 0 12px rgba(255, 235, 59, 0.35);
+    transform: translateY(-3px);
 }
